@@ -6,11 +6,9 @@ get '/' do
 end
 
 get '/secret' do 
-  "Shhhh!"
+  "Shhh!"
 end 
 
 get '/cat' do
-  "<div style='border :5px solid green'>
-  <img src='http://bit.ly/1eze8aE'>
-  </div>"
+  erb(:index)
 end
